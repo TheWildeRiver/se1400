@@ -1,2 +1,13 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex, nofollow">
+        <title>My Student Portfolio</title>
+    </head>
+    <body>
+        <h1>My Student Portfolio</h1>
+        <p>Welcome to my student portfolio! Here you will find information about my projects, skills, and experiences.</p>
+        <h2>Projects</h2>
+    </body>
+</html>
