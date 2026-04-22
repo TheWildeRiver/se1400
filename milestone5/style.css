@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+}
+
+body {
+    background-color: #7c7c7c;
+    background: linear-gradient(to top, #7c7c7c, #ffffff3f);
+}
+
+#wrapper {
+
+    display: grid;
+    grid-template-columns: 50px 550px 50px;
+    grid-template-rows: 50px 350px 550px;
+}
+
+
+#navigationBar {
+    position: static;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: #777774;
+    background: linear-gradient(to left, #adb3ad, #86aaaa);
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    border-bottom: 1.5px solid black;
+    border-top: 1.5px solid black;
+    grid-template-columns: 180px, 340px, 109px, 54px, 112px, 42px, 189px;
+
+    #pvlogo {
+        display: grid;
+        grid-column: 1;
+
+        #logo {
+            cursor: pointer;
+            background-size: contain;
+            grid-column: 1;
+            width: 95px;
+            height: 75px;
+            background-image: url(images/Panther_head.png);
+        }
+    }
+
+    #home {
+        padding-top: 15px;
+        grid-column: 3;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    #about {
+        padding-top: 15px;
+        grid-column: 5;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    #contact {
+        padding-top: 15px;
+        grid-column: 7;
+        cursor: pointer;
+        text-align: center;
+    }
+}
+
+#TLC {
+    grid-column: 1;
+    grid-row: 1;
+    border-bottom: 1.5px solid black;
+    border-left: 1.5px solid black;
+    border-top: 1.5px solid black;
+    background-color: #86aaaa;
+}
+
+#MLC {
+    grid-column: 1;
+    grid-row: 2;
+    border-left: 1.5px solid black;
+    background-color: rgb(205, 205, 205);
+    background: linear-gradient(to top, #a0b4b2, #86aaaa);
+}
+
+#BLC {
+    grid-column: 1;
+    background-color: #ffffff;
+}
+
+#allContent {
+    display: grid;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    grid-column: 2;
+    grid-row: 3;
+    grid-template-rows: 90px, 125px, 90px, 90px, 95px, 90px;
+    grid-template-columns: 4px, 305px, 286px, 305px, 4px;
+    background-color: #e5e5e5;
+
+
+
+    #photoOne {
+        width: 175px;
+        display: grid;
+        grid-column: 2;
+        grid-row: 2;
+        border: 1px solid black;
+        background-color: rgb(0, 0, 0);
+
+        #goumbik {
+            background-size: cover;
+            grid-column: 1;
+            grid-row: 1;
+            background-image: url(images/pexels-goumbik-577195.jpg);
+
+        }
+    }
+
+    #photoTwo {
+        column-span: 50px, 150px;
+        width: 175px;
+        display: grid;
+        grid-column: 3;
+        grid-row: 4;
+        border: 1px solid black;
+        background-color: rgb(0, 0, 0);
+
+        #screenshot {
+
+            background-size: cover;
+            grid-column: 1;
+            grid-row: 1;
+            background-image: url(images/Screenshot\ 2026-02-17\ at\ 1.09.05\ PM.png);
+
+        }
+    }
+
+    #photoThree {
+        width: 175px;
+        display: grid;
+        grid-column: 4;
+        grid-row: 2;
+        border: 1px solid black;
+        background-color: rgb(0, 0, 0);
+
+        #lexovert {
+            align-content: center;
+            background-size: cover;
+            grid-column: 1;
+            grid-row: 1;
+            background-image: url(images/pexels-lexovertoom-450595.jpg);
+        }
+    }
+
+    #textOne {
+        grid-column: 2;
+        grid-row: 3;
+        text-align: center;
+    }
+
+    #textTwo {
+        grid-column: 3;
+        grid-row: 3;
+        text-align: center;
+        align-self: end;
+    }
+
+    #textThree {
+        grid-column: 4;
+        grid-row: 3;
+        text-align: center;
+    }
+}
+
+#TRC {
+    grid-column: 3;
+    grid-row: 1;
+    border-bottom: 1.5px solid black;
+    border-right: 1.5px solid black;
+    border-top: 1.5px solid black;
+    background-color: #adb3ad;
+}
+
+#MRC {
+    border-right: 1.5px solid black;
+    grid-column: 3;
+    grid-row: 2;
+    border-bottom: 1.5px solid black;
+    background-color: rgb(205, 205, 205);
+    background: linear-gradient(to bottom, #adb3ad, #003453);
+}
+
+#BRC {
+    grid-column: 3;
+    grid-row: 3;
+    background-color: #ffffff;
+}
+
+#mainPhoto {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+
+    #jplenio {
+        background-size: cover;
+        height: 350px;
+        width: auto;
+        grid-column: 1;
+        grid-row: 1;
+        background-image: url(images/pexels-jplenio-1103970.jpg);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #wrapper {
+        grid-template-columns: minmax(0px, 1fr) repeat(minmax(0, 756px)) minmax(0px, 1fr);
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .left-column,
+    .right-column {
+        width: 20%;
+    }
+
+    .center-column {
+        width: 60%;
+    }
+
+    #jplenio {
+        grid-column: 2;
+        grid-row: 2;
+        height: auto;
+    }
+
+    #goumbik {
+        height: auto;
+    }
+
+    #screenshot {
+        height: auto;
+    }
+
+    #lexovert {
+        height: auto;
+    }
+}
